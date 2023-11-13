@@ -1,6 +1,6 @@
 const url = 'https://resultados.mininterior.gob.ar/desarrollo';
 const urlServicio = 'https://resultados.mininterior.gob.ar/api/resultados/getResultados';
-const tipoEleccion = 2;
+const tipoEleccion = 1;
 const tipoRecuento = 1;
 let elecciones = [];
 const periodosSelect = document.getElementById('anio');

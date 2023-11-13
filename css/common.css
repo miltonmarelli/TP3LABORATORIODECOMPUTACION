@@ -67,3 +67,48 @@ li > a {
     height: 40px;
     margin: 15px;
 }
+/* 
+.colors {
+        grafica-rojo: rgb(255, 0, 0);
+        gráfica-rojo-claro: rgba(255, 0, 0, 0.3);
+        gráfica-verde: rgb(0, 255, 0);
+        gráfica-verde-claro: rgba(0, 255, 0, 0.3);
+    
+        gráfica-azul: rgb(0, 0, 255);
+        grafica-azul-claro: rgba(0, 0, 255, 0.3);
+    
+        gráfica-amarillo: rgb(255, 255, 0);
+        gráfica-amarillo-claro: rgba(255, 255, 0, 0.3);
+    
+        gráfica-naranja: rgb(255, 165, 0);
+        grafica-naranja-claro: rgba(255, 165, 0, 0.3);
+    
+        gráfica-violeta: rgb(148, 0, 211);
+        grafica-violeta-claro: rgba(148, 0, 211, 0.3);
+    
+        gráfico-cian: rgb(0, 255, 255);
+        grafica-cian-claro: rgba(0, 255, 255, 0.3);
+    
+        gráfica-magenta: rgb(255, 0, 255);
+        gráfica-magenta-claro: rgba(255, 0, 255, 0.3);
+    
+        gráfica-rosa: rgb(255, 182, 193);
+        grafica-rosa-claro: rgba(255, 182, 193, 0.3);
+    
+        grafica-amarillo-verde: rgb(154, 205, 50);
+        grafica-amarillo-verde-claro: rgba(154, 205, 50, 0.3);
+    
+        gráfica-azul-marino: rgb(0, 0, 128);
+        grafica-azul-marino-claro: rgba(0, 0, 128, 0.3);
+    
+        grafica-cafe: rgb(139, 69, 19);
+        grafica-cafe-claro: rgba(139, 69, 19, 0.3);
+    
+        gráfica-gris-oscuro: rgb(64, 64, 64);
+        grafica-gris-oscuro-claro: rgba(64, 64, 64, 0.3);
+    
+        gráfica-blanco: rgb(255, 255, 255);
+        grafica-blanco-claro: rgba(255, 255, 255, 0.3);
+    
+    
+    } */
