@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-    var storageActual = localStorage.getItem('dataInforme');
+    var storageActual = localStorage.getItem('INFORMES');
     let mensajito;
     console.log(storageActual);
 
@@ -29,52 +29,19 @@ document.addEventListener('DOMContentLoaded', function () {
 
 function cargarHtml() {
 
-    var cont = 0;
-    var cuadroInforme = document.getElementById('cuadroInformes');
     localJson.forEach(element => {
-        cuadroInforme.innerHTML += `<tr>
-        <td>${element.distrito}<br>
-            ${provincias[element.distritoId]}
-            </td>
-            <td id="titulo">Elecciones ${element.año}| ${element.tipo} <br><br>
-                <p class="2020"> ${element.año} >${element.tipo} >Provisorio >${element.cargo}} >${element.seccion} </p>
-            </td>
-                <td class="datos-generales">
-                
-                <div class="datos-div">
-                    <div class="column mesas">
-                        ${logos.mesas}
-                            <p>Mesas Escrutadas ${element.informe.estadoRecuento.mesasTotalizadas}</p> 
-                    </div>
-                    <div class="column electores">
-                        ${logos.electores}
-                            <p>Electores ${element.informe.estadoRecuento.cantidadElectores}</p>
-                    </div>
-                    <div class="column participacion">
-                        ${logos.participacion}
-                            <p>Participacion sobre escrutado ${element.informe.estadoRecuento.participacionPorcentaje}%</p>
-                    </div><br>
-                    </div>
-                </td>
-                
-                <td id="datos-agrupacion-${cont}">
-                
-                </td>
-
-            </tr>`
-        element.informe.valoresTotalizadosPositivos.forEach(agrupacion => {
-
-            var datosAgrupacion = document.getElementById(`datos-agrupacion-${cont}`);
-            datosAgrupacion.innerHTML += `<p>${agrupacion.nombreAgrupacion}</p>
-            <p>${agrupacion.votosPorcentaje}%<br> ${agrupacion.votos} votos</p>
-            <hr>    `
+    getElementById('elec-anio').innerHTML = `Elecciones ${element.año}| ${element.tipo}`;
+    getElementById('Anioelec').innerHTML = `${element.año} > `
+    getElementById('cargoelec').innerHTML = `${element.cargo} >`
+    getElementById('mesasescrit').innerHTML = `<p>Mesas Escrutadas ${element.informe.estadoRecuento.mesasTotalizadas}</p>`
+    getElementById('electoress').innerHTML = `<p>Electores ${element.informe.estadoRecuento.cantidadElectores}</p>`
+    getElementById('escriturad').innerHTML = `<p>Participacion sobre escrutado ${element.informe.estadoRecuento.participacionPorcentaje}%</p>`
+    element.informe.valoresTotalizadosPositivos.forEach(agrupacion => {
+        getElementById('datosdatos').innerHTML =`<p>${agrupacion.nombreAgrupacion}</p>`
+        getElementById('porcentajeagrup').innerHTML =`<p>${agrupacion.votosPorcentaje}%<br> ${agrupacion.votos} votos</p>`
 
         })
-        cont += 1;
     });
-
-
-
 }
 
 
